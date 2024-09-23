@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+.main {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    /* background-image: url(https://i.gifer.com/embedded/download/1TaP.gif); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #a09c9c;
+    
+}
+
+.main .image-container {
+    padding: 10px;
+}
+.main .image-container .image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .image-container .image img {
+    width: 400px;
+    align-items: center;
+    background: transparent;
+    
+    
+}
+
+.main .image-container h1 {
+    color: #cb0984;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    letter-spacing: 2px; /* Adjusts spacing between letters */
+    font-weight: bold; /* Makes the text bold */
+    background: linear-gradient(90deg, #0a5bc5, #ff1493); /* Gradient effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .image-container p {
+    color: #324042;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    border-radius: 20px;
+    background: rgba(31, 7, 11, 0.5);
+    
+}
+
+.main .input .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main .input .talk i {
+    font-size: 20px;
+    color: #aed0d0;
+}
+
+.main .input .content {
+    color: #aed0d0;
+    font-size: 15px;
+    margin-right: 20px;
+    
+}
+
+/* Add this to your style.css */
+
+.response-container {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 2rem;
+}
+
+.response-text {
+    max-height: 1.2em; /* Limit to one line height */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    transition: max-height 0.5s ease;
+    color: rgb(14, 18, 22);
+    text-align: left;
+}
+
+.response-text.expanded {
+    max-height: none; /* Remove height limit when expanded */
+    white-space: normal;
+}
+
+/* From Uiverse.io by Ali-Tahmazi99 */ 
+/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    cursor: pointer;
+    
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #240046;
+   }
+   
+   button::after {
+    right: -10px;
+    background: #5a189a;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   button:hover  {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   
+
