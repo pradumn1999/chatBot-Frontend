@@ -77,7 +77,7 @@ const MainPage = () => {
 
   const getGeminiResponse = async (message) => {
     try {
-      const response = await fetch('https://chat-bot-backend-jebcoor0h-pradumn-mandals-projects.vercel.app/', {
+      const response = await fetch('http://localhost:8080', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
